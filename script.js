@@ -1,26 +1,23 @@
 // HA Dental & Skin Corner
 
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("HA Dental & Skin Corner Loaded");
 
-  console.log("Website Loaded");
-
-  // Smooth button animation
-  document.querySelectorAll(".btn").forEach(btn => {
-
-    btn.addEventListener("mouseenter", () => {
-      btn.style.transform = "scale(1.05)";
+  // Smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href"))
+        .scrollIntoView({
+          behavior: "smooth"
+        });
     });
-
-    btn.addEventListener("mouseleave", () => {
-      btn.style.transform = "scale(1)";
-    });
-
   });
 
-  // Fade animation
+  // Fade-in animation
   const sections = document.querySelectorAll("section");
 
-  const observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.style.opacity = "1";
@@ -32,8 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   sections.forEach(section => {
     section.style.opacity = "0";
     section.style.transform = "translateY(40px)";
-    section.style.transition = "0.8s";
+    section.style.transition = "all 0.8s ease";
     observer.observe(section);
   });
-
 });
