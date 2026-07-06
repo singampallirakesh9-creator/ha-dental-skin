@@ -7,7 +7,27 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+z-index:9999;
+}
 
+.whatsapp-float:hover{
+background:#20ba5a;
+}
 <style>
 
 *{
@@ -426,5 +446,8 @@ loading="lazy">
   <footer>
 <p>© 2026 HA Dental & Skin Corner</p>
  </footer>
+  <a href="https://wa.me/919515855411" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 </body>
 </html>
