@@ -272,9 +272,9 @@ Advanced Dental, Skin & Hair Treatments with Modern Technology.
 <i class="fa-solid fa-phone"></i> Call Now
 </a>
 
-<a href="https://wa.me/919515855411" class="btn">
-<i class="fa-brands fa-whatsapp"></i> WhatsApp
-</a>
+<button type="button" class="btn" onclick="sendWhatsApp()">
+Book on WhatsApp
+</button>
 
 </div>
 
@@ -420,9 +420,9 @@ style="width:100%;padding:15px;margin:10px 0;border-radius:10px;border:1px solid
 placeholder="Message"
 style="width:100%;padding:15px;height:120px;margin:10px 0;border-radius:10px;border:1px solid #ddd;"></textarea>
 
-<a href="https://wa.me/919515855411" class="btn">
+<button type="button" class="btn" onclick="sendWhatsApp()">
 Book on WhatsApp
-</a>
+</button>
 
 </form>
 
@@ -450,6 +450,31 @@ loading="lazy">
 <a href="https://wa.me/919515855411" class="whatsapp-float" target="_blank">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
+<footer>
+  <p>© 2026 HA Dental & Skin Corner</p>
+</footer>
 
+<a href="https://wa.me/919515855411" class="whatsapp-float" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+function sendWhatsApp() {
+  var name = document.querySelector('input[type="text"]').value;
+  var phone = document.querySelector('input[type="tel"]').value;
+  var message = document.querySelector('textarea').value;
+
+  var text =
+    "New Appointment Booking:%0A%0A" +
+    "Name: " + name + "%0A" +
+    "Phone: " + phone + "%0A" +
+    "Message: " + message;
+
+  window.open("https://wa.me/919515855411?text=" + text, "_blank");
+}
+</script>
+
+</body>
+</html>
 </body>
 </html>
