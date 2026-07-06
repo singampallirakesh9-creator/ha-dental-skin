@@ -129,3 +129,225 @@ font-size:19px;
 line-height:1.8;
 color:#666;
 }
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card i{
+font-size:45px;
+color:#ff4f87;
+margin-bottom:20px;
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:18px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+font-size:20px;
+margin:15px 0;
+}
+
+footer{
+background:#ff4f87;
+color:#fff;
+text-align:center;
+padding:25px;
+margin-top:60px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:12px;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+🦷 HA Dental & Skin
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Your Smile, Your Beauty, Our Care</h1>
+
+<p>
+Advanced Dental, Skin & Hair Treatments with Modern Technology.
+</p>
+
+<a href="tel:+919151585411" class="btn">
+<i class="fa-solid fa-phone"></i> Call Now
+</a>
+
+<a href="https://wa.me/919151585411" class="btn">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1000">
+
+<div>
+
+<h2>HA Dental & Skin Corner</h2>
+
+<p>
+We provide advanced Dental Care, Skin Care, Hair Treatments and Cosmetic Procedures with experienced doctors, modern equipment and patient-friendly service.
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<i class="fa-solid fa-tooth"></i>
+<h3>Dental Care</h3>
+<p>Root Canal, Implants, Smile Design</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-spa"></i>
+<h3>Skin Care</h3>
+<p>Hydrafacial, Acne, Pigmentation</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-scissors"></i>
+<h3>Hair Care</h3>
+<p>Hair PRP & Hair Treatments</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="title">Clinic Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1000">
+
+<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1000">
+
+<img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1000">
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<p>📞 +91 95158 55411</p>
+
+<p>
+📍 6-60-9/3, Above Tanishq Showroom,<br>
+Chinagantyada, Old Gajuwaka,<br>
+Visakhapatnam - 530026
+</p>
+
+<a href="https://wa.me/919515855411" class="btn">
+Book Appointment
+</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 HA Dental & Skin Corner</p>
+
+</footer>
+
+</body>
+</html>
